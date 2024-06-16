@@ -1,0 +1,92 @@
+unit CONSULTA_CIDADES;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Grids, Vcl.DBGrids,
+  Vcl.StdCtrls, Data.Win.ADODB;
+
+type
+  TCONS_CIDADES = class(TForm)
+    DBGrid_CIDADES: TDBGrid;
+    RadioButton_SORT_CODIGO: TRadioButton;
+    ADOTable_CIDADES: TADOTable;
+    DataSource_CIDADES: TDataSource;
+    RadioButton_SORT_NOME: TRadioButton;
+    RadioButton_SORT_ESTADOS: TRadioButton;
+    Edit_BUSCA: TEdit;
+    Button_BUSCA: TButton;
+    procedure RadioButton_SORT_CODIGOClick(Sender: TObject);
+    procedure RadioButton_SORT_NOMEClick(Sender: TObject);
+    procedure RadioButton_SORT_ESTADOSClick(Sender: TObject);
+    procedure Button_BUSCAClick(Sender: TObject);
+  private
+    { Private declarations }
+    procedure SortData(const FieldName: string);
+    procedure SearchData;
+  public
+    { Public declarations }
+  end;
+
+var
+  CONS_CIDADES: TCONS_CIDADES;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  CADASTRO_CIDADE, CADASTRO_CLIENTE, CONSULTA_CLIENTES, DATAMODULE, MENU, RELATORIO;
+
+
+procedure TCONS_CIDADES.SortData(const FieldName: string);
+begin
+  DM_SISTEMA.ADOTable_CIDADES.Sort := FieldName + ' ASC';  // ORDENAR DE FORMA CRESCENTE
+  DM_SISTEMA.ADOTable_CIDADES.Requery;
+end;
+
+
+// BOTÃO PARA ORDENAR POR ESTADOS
+procedure TCONS_CIDADES.RadioButton_SORT_ESTADOSClick(Sender: TObject);
+begin
+  SortData('CID_ESTADO');
+end;
+
+
+procedure TCONS_CIDADES.SearchData;
+begin
+  var
+  FieldName: string;
+  begin
+  // Determina o campo pelo qual a busca será feita
+    if RadioButton_SORT_CODIGO.Checked then
+    FieldName := 'COD_CIDADE'
+    else if RadioButton_SORT_NOME.Checked then
+    FieldName := 'CID_NOME'
+    else
+    Exit;  // Nenhum RadioButton está selecionado, sair do método
+  end;
+end;
+
+
+// BOTÃO PARA ORDENAR POR CODIGOS
+procedure TCONS_CIDADES.Button_BUSCAClick(Sender: TObject);
+begin
+  SearchData;
+end;
+
+procedure TCONS_CIDADES.RadioButton_SORT_CODIGOClick(Sender: TObject);
+begin
+  SortData('COD_CIDADE');
+end;
+
+// BOTÃO PARA ORDENAR POR NOMES
+procedure TCONS_CIDADES.RadioButton_SORT_NOMEClick(Sender: TObject);
+begin
+  SortData('CID_NOME');
+end;
+
+
+end.
+

@@ -1,0 +1,16 @@
+1. Monte um arquivo texto com um algoritmo, passo a passo, para troca de um pneu de carro 
+que furou.  
+
+01. Sinalizar com o triângulo
+02. Retirar ferramentas, macaco e chave de rodas
+03. Retirar o step do porta-malas
+04. Afrouxar parafusos da roda
+05. Posicionar macaco hidraulico
+06. Levantar o veiculo
+07. Finalizar a retirada dos parafusos
+08. Retirar a roda
+09. Posicionar step no local
+10. Parafusar step
+11. Descer o veiculo do macaco hidraulico
+12. Conferir aperto dos parafusos do step
+13. Guardar roda furada, ferramentas e triangulo

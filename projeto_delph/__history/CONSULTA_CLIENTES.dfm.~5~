@@ -1,0 +1,87 @@
+object CONS_CLIENTES: TCONS_CLIENTES
+  Left = 0
+  Top = 0
+  Caption = 'CLIENTES'
+  ClientHeight = 455
+  ClientWidth = 1181
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DBGrid_CLIENTES: TDBGrid
+    Left = 0
+    Top = 109
+    Width = 1181
+    Height = 346
+    Align = alClient
+    DataSource = DM_SISTEMA.DataSource_CLIENTES
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object RadioButton_SORT_CODIGO: TRadioButton
+    Left = 0
+    Top = 0
+    Width = 1181
+    Height = 17
+    Align = alTop
+    Caption = 'Ordenar por c'#243'digo'
+    TabOrder = 1
+    ExplicitLeft = 112
+    ExplicitTop = 400
+    ExplicitWidth = 113
+  end
+  object RadioButton_SORT_CPF: TRadioButton
+    Left = 0
+    Top = 17
+    Width = 1181
+    Height = 17
+    Align = alTop
+    Caption = 'Ordenar por CPF'
+    TabOrder = 2
+    ExplicitTop = 11
+  end
+  object RadioButton_SORT_NOME: TRadioButton
+    Left = 0
+    Top = 34
+    Width = 1181
+    Height = 17
+    Align = alTop
+    Caption = 'Ordenar por nome'
+    TabOrder = 3
+    ExplicitLeft = 488
+    ExplicitTop = 400
+    ExplicitWidth = 113
+  end
+  object Edit_BUSCA: TEdit
+    AlignWithMargins = True
+    Left = 3
+    Top = 54
+    Width = 1175
+    Height = 21
+    Align = alTop
+    TabOrder = 4
+    ExplicitLeft = -2
+    ExplicitTop = 40
+  end
+  object Button_BUSCA: TButton
+    AlignWithMargins = True
+    Left = 3
+    Top = 81
+    Width = 1175
+    Height = 25
+    Align = alTop
+    BiDiMode = bdLeftToRight
+    Caption = 'BUSCAR'
+    ParentBiDiMode = False
+    TabOrder = 5
+  end
+end

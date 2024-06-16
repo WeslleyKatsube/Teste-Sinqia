@@ -1,0 +1,51 @@
+unit RELATORIO;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, ppComm, ppRelatv, ppDB, ppDBPipe,
+  ppBands, ppCache, ppClass, ppDesignLayer, ppParameter, ppProd, ppReport,
+  Data.DB, Data.Win.ADODB, System.UITypes, Vcl.StdCtrls;  // Adicionadas unidades necessárias
+
+type
+  TREPORT = class(TForm)
+    ppDBPipeline_FILTROS: TppDBPipeline;
+    ppDBPipeline_SELECT: TppDBPipeline;
+    ppReport_RELATORIO: TppReport;
+    ppParameterList1: TppParameterList;
+    ppDesignLayers1: TppDesignLayers;
+    ppDesignLayer1: TppDesignLayer;
+    ppHeaderBand1: TppHeaderBand;
+    ppDetailBand1: TppDetailBand;
+    ppFooterBand1: TppFooterBand;
+    ADOQuery_FILTROS_REPORT: TADOQuery;
+    ADOQuery_SELECT_CIDADES: TADOQuery;
+    DataSource1: TDataSource;
+    TButton_PRINT: TButton;
+    procedure TButton_PRINTClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  REPORT: TREPORT;
+
+implementation
+
+{$R *.dfm}
+
+uses CADASTRO_CIDADE, CADASTRO_CLIENTE, DATAMODULE, MENU, CONSULTA_CIDADES,
+  CONSULTA_CLIENTES;
+
+
+
+procedure TREPORT.TButton_PRINTClick(Sender: TObject);
+begin
+ppReport_RELATORIO.Print
+end;
+
+end.
+

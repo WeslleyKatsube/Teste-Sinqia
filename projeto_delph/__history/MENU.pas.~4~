@@ -1,0 +1,64 @@
+unit MENU;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus;
+
+type
+  TMAIN_MENU = class(TForm)
+    BARRA_MENU: TMainMenu;
+    CADASTROS1: TMenuItem;
+    CONSULTAS1: TMenuItem;
+    RELATORIOS1: TMenuItem;
+    CADASTRODECLIENTES1: TMenuItem;
+    CADASTRODECIDADES1: TMenuItem;
+    CONSULTASDECIDADES1: TMenuItem;
+    CONSULTASDECLIENTES1: TMenuItem;
+    procedure CADASTRODECIDADES1Click(Sender: TObject);
+    procedure CADASTRODECLIENTES1Click(Sender: TObject);
+    procedure CONSULTASDECIDADES1Click(Sender: TObject);
+    procedure CONSULTASDECLIENTES1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  MAIN_MENU: TMAIN_MENU;
+
+implementation
+
+{$R *.dfm}
+
+uses CADASTRO_CIDADE, CADASTRO_CLIENTE, DATAMODULE, RELATORIO, CONSULTA_CIDADES,
+  CONSULTA_CLIENTES;
+
+
+procedure TMAIN_MENU.CADASTRODECIDADES1Click(Sender: TObject);
+begin
+CID_CADASTRO.SHOW;
+end;
+
+
+procedure TMAIN_MENU.CADASTRODECLIENTES1Click(Sender: TObject);
+begin
+CLI_CADASTRO.SHOW;
+end;
+
+
+procedure TMAIN_MENU.CONSULTASDECIDADES1Click(Sender: TObject);
+begin
+CONS_CIDADES.SHOW;
+end;
+
+
+procedure TMAIN_MENU.CONSULTASDECLIENTES1Click(Sender: TObject);
+begin
+CONS_CLIENTES.SHOW;
+end;
+
+
+end.

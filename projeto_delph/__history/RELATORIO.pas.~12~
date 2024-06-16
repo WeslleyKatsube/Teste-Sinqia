@@ -1,0 +1,96 @@
+unit RELATORIO;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, ppComm, ppRelatv, ppDB, ppDBPipe,
+  ppBands, ppCache, ppClass, ppDesignLayer, ppParameter, ppProd, ppReport,
+  Data.DB, Data.Win.ADODB, System.UITypes, Vcl.StdCtrls, ppCtrls, ppPrnabl,
+  ppVar, Vcl.Grids, Vcl.DBGrids, Data.FMTBcd, Data.SqlExpr;  // Adicionadas unidades necessárias
+
+type
+  TREPORT = class(TForm)
+    ppDBPipeline_CLIENTE: TppDBPipeline;
+    ppDBPipeline_CIDADE: TppDBPipeline;
+    ppReport_RELATORIO: TppReport;
+    ppParameterList1: TppParameterList;
+    ppDesignLayers1: TppDesignLayers;
+    ppDesignLayer1: TppDesignLayer;
+    TButton_PRINT: TButton;
+    ppHeaderBand1: TppHeaderBand;
+    ppDetailBand1: TppDetailBand;
+    ppFooterBand1: TppFooterBand;
+    TITULO: TppLabel;
+    CLI_NOME: TppDBText;
+    CLI_ENDERECO: TppDBText;
+    COD_CIDADE: TppDBText;
+    CID_NOME: TppDBText;
+    CID_ESTADO: TppDBText;
+    COD_CLIENTE: TppDBText;
+    ppLabel_COD_CLIENTE: TppLabel;
+    ppLabel_CLI_NOME: TppLabel;
+    ppLabel_CLI_ENDERECO: TppLabel;
+    ppLabel_COD_CIDADE: TppLabel;
+    ppLabel_CID_NOME: TppLabel;
+    ppLabel_CID_ESTADO: TppLabel;
+    ppLine1: TppLine;
+    ppSystemVariable1: TppSystemVariable;
+    DBGrid1: TDBGrid;
+    RadioButton_SORT_ESTADO: TRadioButton;
+    RadioButton_SORT_COD_CIDADE: TRadioButton;
+    RadioButton_SORT_COD_CLIENTE: TRadioButton;
+    procedure TButton_PRINTClick(Sender: TObject);
+    procedure RadioButton_SORT_COD_CLIENTEClick(Sender: TObject);
+    procedure RadioButton_SORT_COD_CIDADEClick(Sender: TObject);
+    procedure RadioButton_SORT_ESTADOClick(Sender: TObject);
+  private
+    { Private declarations }
+    procedure SortData(const FieldName: string);
+  public
+    { Public declarations }
+  end;
+
+var
+  REPORT: TREPORT;
+
+implementation
+
+{$R *.dfm}
+
+uses CADASTRO_CIDADE, CADASTRO_CLIENTE, DATAMODULE, MENU, CONSULTA_CIDADES,
+  CONSULTA_CLIENTES;
+
+
+procedure TREPORT.SortData(const FieldName: string);
+begin
+  DM_SISTEMA.ADOQuery_RELATORIO.Sort := FieldName + ' ASC';  // Ordenar de forma crescente
+  DM_SISTEMA.ADOQuery_RELATORIO.Requery;
+end;
+
+
+procedure TREPORT.RadioButton_SORT_ESTADOClick(Sender: TObject);
+begin
+  SortData('COD_CLIENTE');
+end;
+
+
+procedure TREPORT.RadioButton_SORT_COD_CIDADEClick(Sender: TObject);
+begin
+  SortData('COD_CIDADE');
+end;
+
+
+procedure TREPORT.RadioButton_SORT_COD_CLIENTEClick(Sender: TObject);
+begin
+  SortData('CID_ESTADO');
+end;
+
+
+procedure TREPORT.TButton_PRINTClick(Sender: TObject);
+begin
+ppReport_RELATORIO.Print
+end;
+
+end.
+

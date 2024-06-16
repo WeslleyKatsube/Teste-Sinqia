@@ -1,0 +1,18 @@
+program TESTE_SINQIA;
+
+uses
+  Vcl.Forms,
+  MENU in 'MENU.pas' {MAIN_MENU},
+  CADASTRO_CLIENTE in 'CADASTRO_CLIENTE.pas' {CLI_CADASTRO},
+  CADASTRO_CIDADE in 'CADASTRO_CIDADE.pas' {CID_CADASTRO};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TMAIN_MENU, MAIN_MENU);
+  Application.CreateForm(TCLI_CADASTRO, CLI_CADASTRO);
+  Application.CreateForm(TCID_CADASTRO, CID_CADASTRO);
+  Application.Run;
+end.

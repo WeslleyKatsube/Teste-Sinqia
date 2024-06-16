@@ -1,0 +1,26 @@
+unit MENU;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+
+type
+  TMAIN_MENU = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  MAIN_MENU: TMAIN_MENU;
+
+implementation
+
+{$R *.dfm}
+
+uses CADASTRO_CIDADE, CADASTRO_CLIENTE, DATAMODULE, RELATORIO;
+
+end.

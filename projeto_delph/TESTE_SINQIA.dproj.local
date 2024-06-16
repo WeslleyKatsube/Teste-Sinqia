@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/06/14 19:48:21.000.012,=C:\Program Files (x86)\Embarcadero\Studio\21.0\bin\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/06/14 19:49:42.000.005,C:\Program Files (x86)\Embarcadero\Studio\21.0\bin\Projects\Unit1.pas=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\MENU.pas</Transaction>
+    <Transaction>2024/06/14 19:49:42.000.005,C:\Program Files (x86)\Embarcadero\Studio\21.0\bin\Projects\Unit1.dfm=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\MENU.dfm</Transaction>
+    <Transaction>2024/06/14 19:50:13.000.374,C:\Program Files (x86)\Embarcadero\Studio\21.0\bin\Projects\Project1.dproj=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\TESTE_SINQIA.dproj</Transaction>
+    <Transaction>2024/06/14 19:50:25.000.367,=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit1.pas</Transaction>
+    <Transaction>2024/06/14 19:50:30.000.043,=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit2.pas</Transaction>
+    <Transaction>2024/06/14 19:50:39.000.063,=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit1.pas</Transaction>
+    <Transaction>2024/06/14 19:51:39.000.348,C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit1.dfm=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\CADASTRO_CLIENTE.dfm</Transaction>
+    <Transaction>2024/06/14 19:51:39.000.348,C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit1.pas=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\CADASTRO_CLIENTE.pas</Transaction>
+    <Transaction>2024/06/14 19:51:53.000.200,=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit1.pas</Transaction>
+    <Transaction>2024/06/14 19:53:11.000.569,C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit1.pas=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\CADASTRO_CIDADE.pas</Transaction>
+    <Transaction>2024/06/14 19:53:11.000.569,C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit1.dfm=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\CADASTRO_CIDADE.dfm</Transaction>
+    <Transaction>2024/06/14 19:53:22.000.314,=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit1.pas</Transaction>
+    <Transaction>2024/06/14 19:54:48.000.630,C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit1.pas=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\RELATORIO.pas</Transaction>
+    <Transaction>2024/06/14 19:54:48.000.630,C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit1.dfm=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\RELATORIO.dfm</Transaction>
+    <Transaction>2024/06/14 19:54:58.000.888,=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit1.pas</Transaction>
+    <Transaction>2024/06/14 19:55:51.000.589,C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit1.pas=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\DATAMODULE.pas</Transaction>
+    <Transaction>2024/06/14 19:55:51.000.589,C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit1.dfm=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\DATAMODULE.dfm</Transaction>
+    <Transaction>2024/06/14 20:02:24.000.155,=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit1.pas</Transaction>
+    <Transaction>2024/06/14 20:02:27.000.466,=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit2.pas</Transaction>
+    <Transaction>2024/06/14 20:03:48.000.994,C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit1.pas=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\CONSULTA_CLIENTES.pas</Transaction>
+    <Transaction>2024/06/14 20:03:48.000.994,C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit1.dfm=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\CONSULTA_CLIENTES.dfm</Transaction>
+    <Transaction>2024/06/14 20:05:13.000.468,C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit2.dfm=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\CONSULTA_CIDADES.dfm</Transaction>
+    <Transaction>2024/06/14 20:05:13.000.468,C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit2.pas=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\CONSULTA_CIDADES.pas</Transaction>
+    <Transaction>2024/06/15 17:09:36.000.149,=C:\Users\wesll\OneDrive\Área de Trabalho\Arquivos do Teste\projeto_delph\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
